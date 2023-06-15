@@ -11,7 +11,7 @@ import FormLabel from '@mui/material/FormLabel';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Grow from '@mui/material/Grow';
 import IconButton from '@mui/material/IconButton';
-import Input from '@mui/material/Input';
+import MuiInput from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 import InputBase from '@mui/material/InputBase';
 import InputLabel from '@mui/material/InputLabel';
@@ -23,4 +23,4 @@ import CardMedia from '@mui/material/CardMedia';
 import Collapse from '@mui/material/Collapse';
 
 
-export { createTheme, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, GlobalStyles, Grow, IconButton, Input, InputAdornment, InputBase, InputLabel, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse }
+export { createTheme, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, GlobalStyles, Grow, IconButton, MuiInput, InputAdornment, InputBase, InputLabel, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse }
