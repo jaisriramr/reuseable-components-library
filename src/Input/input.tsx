@@ -31,16 +31,19 @@ const Input: FC<InputProps> = ({
     <Fragment>
       <TextField 
           sx={
-            tmInput ? {
-              '&.MuiOutlinedInput-notchedOutline': {
-                border: 'none'
+             tmInput ? {
+              fontSize: '14px !important',
+              height: '41px !important',
+              '& .MuiOutlinedInput-notchedOutline': {
+                border: '1px solid transparent !important',
               },
-              '&.MuiOutlinedInput-notchedOutline:hover': {
-                border: '1px solid #979797'
+              '&:hover': {
+                border: '1px solid #979797 !important'
+              },
+              '&:focus': {
+                border: '1px solid #979797 !important'
               }
-            } : {
-              
-            }
+            } : {}
           }
           className={className}
           id={id} 
