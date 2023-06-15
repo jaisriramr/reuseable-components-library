@@ -33,6 +33,7 @@ const Input: FC<InputProps> = ({
           sx={
              tmInput ? {
               fontSize: '14px !important',
+              borderRadius: '0',
               height: '41px !important',
               '& .MuiOutlinedInput-notchedOutline': {
                 border: '1px solid transparent !important',
