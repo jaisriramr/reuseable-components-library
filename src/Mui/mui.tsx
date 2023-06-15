@@ -1,7 +1,6 @@
 // import * as Mui from '@mui/material';
 
 // export default Mui;
-
 import createTheme from "@mui/material/styles/createTheme";
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -21,6 +20,7 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Collapse from '@mui/material/Collapse';
+import * as Styles from '@mui/material/styles';
 
 
-export { createTheme, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, GlobalStyles, Grow, IconButton, MuiInput, InputAdornment, InputBase, InputLabel, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse }
+export { Styles, createTheme, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, GlobalStyles, Grow, IconButton, MuiInput, InputAdornment, InputBase, InputLabel, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse }

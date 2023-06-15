@@ -17,16 +17,22 @@ const TMMenu: FC<ListProps> = ({
         <List className={className}>
             {
                 list?.map((l: any, i: any) => (
-                    <ListItem key={i} disablePadding={l.disablePadding}>
-                        <ListItemButton divider={l.divider}>
+                    <ListItem key={i} disablePadding={l.disablePadding} disabled={l.disabled} disableGutters={l.disableGutters}>
+                        <ListItemButton disableGutters={l.disableGutters} disableRipple={l.disableRipple} disableTouchRipple={l.disableTouchRipple} divider={l.divider}
+                            sx={{
+                                "&.MuiListItemButton-root:hover": {
+                                    background: `${l.hoverEffect}`
+                                }
+                            }}
+                        >
                             {
                                 l.icon 
                                 &&
-                            <ListItemIcon>
+                            <ListItemIcon sx={{minWidth: `${l.iconWidth}`}}>
                                 {l.iconElement}
                             </ListItemIcon>
                             }
-                            <ListItemText>
+                            <ListItemText sx={{fontSize: `${l.fontSize}`, color: `${l.fontColor}`}}>
                                 {l.text}
                             </ListItemText>
                         </ListItemButton>

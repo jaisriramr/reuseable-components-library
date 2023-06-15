@@ -7,4 +7,6 @@ export interface ListProps {
   subheader?: ReactNode,
   list?: Array<object>,
   className?: string,
+  disableGutters?: boolean,
+  iconWidth?: string,
 }
