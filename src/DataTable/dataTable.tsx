@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from "react"
 import { DataTablePRops } from './dataTable.types'
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid/DataGrid';
 import Tabs from '../Tabs/tabs'
 import Box from "../Box/box";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import FilterListIcon from '@mui/icons-material/FilterList';
 import Button from "@mui/material/Button";
 import Select from '@mui/material/Select'
-import { MenuItem } from "@mui/material";
+import MenuItem from "@mui/material/MenuItem";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
