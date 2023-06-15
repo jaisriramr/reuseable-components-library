@@ -15,4 +15,7 @@ export interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
   role?: string;
   className?: string;
+  width?: string;
+  height?: string;
+  columnGap?: string;
 }

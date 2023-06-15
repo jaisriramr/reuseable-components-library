@@ -15,7 +15,10 @@ const TMButton: FC<ButtonProps> = ({
   endIcon,
   onClick,
   role,
-  className
+  className,
+  height,
+  width,
+  columnGap,
 }) => {
 
   return (
@@ -33,6 +36,15 @@ const TMButton: FC<ButtonProps> = ({
         startIcon={startIcon}
         endIcon={endIcon}
         role={role}
+        sx={{
+          height: {height},
+          width: {width},
+          textTransform: 'capitalize',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          columnGap: {columnGap}
+        }}
       >
         {children}
       </Button>

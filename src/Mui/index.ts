@@ -1,1 +1,1 @@
-export { default as Mui } from './mui'
+export * from './mui'
