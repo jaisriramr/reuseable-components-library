@@ -24,11 +24,24 @@ const Input: FC<InputProps> = ({
   required,
   multiline,
   className,
+  tmInput,
 }) => {
 
   return (
     <Fragment>
       <TextField 
+          sx={
+            tmInput ? {
+              '&.MuiOutlinedInput-notchedOutline': {
+                border: 'none'
+              },
+              '&.MuiOutlinedInput-notchedOutline:hover': {
+                border: '1px solid #979797'
+              }
+            } : {
+              
+            }
+          }
           className={className}
           id={id} 
           type={type}

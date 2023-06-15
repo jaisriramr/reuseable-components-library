@@ -23,4 +23,5 @@ export interface InputProps {
   multiline?: boolean;
   onChange?: ChangeEventHandler<HTMLInputElement>;
   className?: string;
+  tmInput?: boolean;
 }
