@@ -14,6 +14,7 @@ const plugins = [
   resolve(),
   replace({
     __IS_DEV__: process.env.NODE_ENV === 'development',
+    preventAssignment: true
   }),
   commonjs(),
   postcss({

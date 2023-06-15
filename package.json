@@ -25,7 +25,11 @@
     "url": "git+https://github.com/jaisriramr/tm-components-library.git"
   },
   "keywords": [
-    "react"
+    "react",
+    "reuseable",
+    "ui",
+    "components",
+    "mui"
   ],
   "author": "jaisriramr",
   "license": "ISC",
