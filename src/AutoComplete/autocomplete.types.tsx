@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 export interface AutocompleteProps {
     options: Array<object>;
     label?: string;
-    renderInput: any;
     autoComplete?: boolean;
     autoHighlight?: boolean;
     autoSelect?: boolean;
