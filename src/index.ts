@@ -25,6 +25,7 @@ export * from './FormHelperText';
 export * from './FormLabel';
 export * from './Grid';
 export * from './Icons';
+export * from './IconButton'
 export * from './Input';
 export * from './LinearProgress';
 export * from './Link';
@@ -34,6 +35,7 @@ export * from './ListItemButton';
 export * from './ListItemIcon';
 export * from './ListItemText';
 export * from './Menu';
+export * from './MenuItem'
 export * from './Mui';
 export * from './MuiList';
 export * from './Pagination';
@@ -51,3 +53,4 @@ export * from './Stepper';
 export * from './Tabs';
 export * from './Tooltip';
 export * from './Typography';
+export * from './Toolbar'
