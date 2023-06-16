@@ -57,7 +57,6 @@ const AutoComplete: FC<AutocompleteProps> = ({
     openOnFocus,
     openText,
     PaperComponent,
-    PopperComponent,
     popupIcon,
     readOnly,
     renderGroup,
@@ -151,10 +150,6 @@ const AutoComplete: FC<AutocompleteProps> = ({
                         '& ::-webkit-scrollbar': {
                             width: '10px'
                           },
-                        //   '& ::-webkit-scrollbar-track': {
-                        //     'box-shadow': 'inset 0 0 5px grey',
-                        //     'border-radius': '10px'
-                        //   },
                            
                           '& ::-webkit-scrollbar-thumb': {
                             'background': '#EEEEEE',
