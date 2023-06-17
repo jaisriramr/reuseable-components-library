@@ -35,6 +35,9 @@ const Input: FC<InputProps> = ({
               fontSize: '14px !important',
               borderRadius: '0',
               height: '41px !important',
+              display: 'flex',
+              alignItems: 'center',
+              flexDirection: 'row',
               '& .MuiOutlinedInput-notchedOutline': {
                 border: '1px solid transparent !important',
               },

@@ -7,7 +7,8 @@ const Appbar: FC<AppbarProps> = ({
     color,
     enableColorOnDark,
     position,  
-    className
+    className,
+    sx,
 }) => {
 
 
@@ -18,6 +19,7 @@ const Appbar: FC<AppbarProps> = ({
             color={color}
             enableColorOnDark={enableColorOnDark}
             position={position}
+            sx={sx}
         >
             {children}
         </AppBar>

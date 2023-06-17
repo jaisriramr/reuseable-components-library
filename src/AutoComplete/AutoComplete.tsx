@@ -3,6 +3,7 @@ import Autocomplete from '@mui/material/Autocomplete'
 import { AutocompleteProps } from './autocomplete.types'
 import TextField from "@mui/material/TextField";
 import Popper from '@mui/material/Popper'
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const AutoComplete: FC<AutocompleteProps> = ({
     options,
@@ -164,7 +165,7 @@ const AutoComplete: FC<AutocompleteProps> = ({
                       {props.children}
                     </Popper>
                   )}
-                popupIcon={popupIcon}
+                popupIcon={<KeyboardArrowDownIcon />}
                 readOnly={readOnly}
                 renderGroup={renderGroup}
                 renderOption={renderOption}
