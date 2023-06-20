@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 
 export interface AutocompleteProps {
     options: Array<object>;
@@ -66,4 +66,24 @@ export interface AutocompleteProps {
     value?: any;
     tmAutoComplete?: boolean;
     placeholder?: string;
+    popperwidth?: string;
+    error?: boolean;
+    onMouseDown?: MouseEventHandler;
+    onMouseLeave?: MouseEventHandler;
+    placement?: 'auto-end'
+    | 'auto-start'
+    | 'auto'
+    | 'bottom-end'
+    | 'bottom-start'
+    | 'bottom'
+    | 'left-end'
+    | 'left-start'
+    | 'left'
+    | 'right-end'
+    | 'right-start'
+    | 'right'
+    | 'top-end'
+    | 'top-start'
+    | 'top';
+    setSearchPlaceholder?: boolean;
 }

@@ -23,4 +23,5 @@ export interface AlertProps {
   transitionDuration?: number;
   anchorOrigin?: { horizontal: 'center' | 'left' | 'right' , vertical: 'bottom' | 'top' };
   className?: string;
+  sx?: any;
 }

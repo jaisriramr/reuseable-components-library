@@ -58,7 +58,6 @@ const AutoComplete: FC<AutocompleteProps> = ({
     openOnFocus,
     openText,
     PaperComponent,
-    popupIcon,
     readOnly,
     renderGroup,
     renderOption,
@@ -70,30 +69,46 @@ const AutoComplete: FC<AutocompleteProps> = ({
     value,
     tmAutoComplete,
     placeholder,
+    error,
+    onMouseDown,
+    onMouseLeave,
+    placement,
+    setSearchPlaceholder,
 }) => {
+
+  const [nPlaceholder, setNPlaceholder] = React.useState<string | undefined>(placeholder)
+
 
     return (
         <div>
             <Autocomplete
+                onMouseDown={onMouseDown}
+                onMouseLeave={onMouseLeave}
                 sx={
+                    
                     tmAutoComplete ? {
+                    position: 'relative',
+                    error,
                     borderRadius: '0 !important' ,
                      fontSize: '14px !important',
                      height: '41px !important',
+                     '& .MuiInputBase-root': {
+                      borderColor: 'transparent',
+                      borderRadius: '0'
+                     },
+
                      '& .MuiOutlinedInput-notchedOutline': {
-                       border: '1px solid transparent !important',
+                       borderColor: 'transparent',
+                       borderWidth: '1px !important'
                      },
                      '&:hover': {
-                       border: '1px solid #979797 !important'
-                     },
-                     '&:focus': {
-                       border: '1px solid #979797 !important'
+                       borderColor: '#979797 !important'
                      },
                      
                    } : sx
                  }
                 options={options}
-                renderInput={params => <TextField {...params} label={label} placeholder={placeholder} />}
+                renderInput={params => <TextField {...params} label={label} onBlur={() => setNPlaceholder(placeholder)} onMouseDown={() => setSearchPlaceholder && setNPlaceholder('Search')} placeholder={nPlaceholder} />}
                 autoComplete={autoComplete}
                 autoHighlight={autoHighlight}
                 autoSelect={autoSelect}
@@ -145,17 +160,23 @@ const AutoComplete: FC<AutocompleteProps> = ({
                 openText={openText}
                 PaperComponent={PaperComponent}
                 PopperComponent={(props) => (
-                    <Popper sx={tmAutoComplete ? {
+                    <Popper 
+                    placement={placement}
+                    sx={tmAutoComplete ? {
+                      width: 'auto !important',
+                      '& .MuiPopover-root': {
+                          
+                      },
                         marginTop: '12px !important',
                         boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.15) !important',
                         '& ::-webkit-scrollbar': {
-                            width: '10px'
+                            width: '4px'
                           },
                            
                           '& ::-webkit-scrollbar-thumb': {
                             'background': '#EEEEEE',
-                            height: '100px',
-                            'border-radius': '10px'
+                            height: '65px',
+                            'border-radius': '4px'
                           },
                           
                           '& ::-webkit-scrollbar-thumb:hover': {

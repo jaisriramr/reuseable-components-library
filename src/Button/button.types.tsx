@@ -18,4 +18,7 @@ export interface ButtonProps {
   width?: string;
   height?: string;
   columnGap?: string;
+  onMouseOver?: any;
+  onMouseEnter?: any;
+  onMouseLeave?: any;
 }

@@ -7,7 +7,7 @@ export interface PopupProps {
     dialogTransitionDuration?: number
     | { appear?: number, enter?: number, exit?: number },
     open: boolean,
-    anchorEl?: HTMLElement,
+    anchorEl?: HTMLButtonElement,
     anchorOrigin?: { horizontal: 'center' | 'left' | 'right' | number, vertical: 'bottom' | 'center' | 'top' | number },
     anchorPosition?: { left: number, top: number },
     anchorReference?: 'anchorEl' | 'anchorPosition' | 'none',

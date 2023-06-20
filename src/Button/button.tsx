@@ -19,11 +19,17 @@ const TMButton: FC<ButtonProps> = ({
   height,
   width,
   columnGap,
+  onMouseEnter,
+  onMouseLeave,
+  onMouseOver,
 }) => {
 
   return (
     <Fragment>
       <Button 
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onMouseOver={onMouseOver}
         className={className}
         variant={variant}
         fullWidth={fullWidth}

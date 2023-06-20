@@ -1,6 +1,7 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import AutoComplete from "./AutoComplete";
+import { CheckBox } from "@mui/icons-material";
 
 const meta: Meta<typeof AutoComplete> = {
   component: AutoComplete,
@@ -141,14 +142,18 @@ export const Primary: Story = (args) => {
         { label: "Snatch", year: 2000 },
         { label: "3 Idiots", year: 2009 },
         { label: "Monty Python and the Holy Grail", year: 1975 }
+
       ];
 
   return (
-    <AutoComplete options={top100Films} {...args} size='small' placeholder='Choose movie'  />
+    <AutoComplete sx={{width: '200px !important'}} options={top100Films} {...args} size='small' placeholder='Choose movie'  />
   )
 }
 
 
 Primary.args = {
     tmAutoComplete: true,
+    placement: 'top-start',
+    fullWidth: false,
+    popperwidth: '200px !important'
 };

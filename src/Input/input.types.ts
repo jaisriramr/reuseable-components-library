@@ -24,4 +24,10 @@ export interface InputProps {
   onChange?: ChangeEventHandler<HTMLInputElement>;
   className?: string;
   tmInput?: boolean;
+  sx?: any;
+  onMouseDown?: any;
+  onMouseOut?: any;
+  onMouseLeave?: any;
+  onMouseOver?: any;
+  onMouseEnter?: any;
 }

@@ -23,7 +23,8 @@ const Alerts: FC<AlertProps> = ({
     anchorOrigin,
     message,
     onSnackBarClose,
-    className
+    className,
+    sx,
 }) => {
 
   return (
@@ -41,8 +42,10 @@ const Alerts: FC<AlertProps> = ({
               role={role}
               severity={severity}
               variant={variant}
+              sx={sx}
           />
         ) : <Snackbar 
+        sx={sx}
         className={className}
           action={action}
           anchorOrigin={anchorOrigin}
