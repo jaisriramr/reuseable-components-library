@@ -1,17 +1,20 @@
-import React, { FC } from "react"
-import { TmDataTableProps } from './tmDataTable.types'
+import React, { Fragment } from "react"
 import { DataGrid } from "@mui/x-data-grid";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
-const TMTabs: FC<TmDataTableProps> = ({
+const TmDataTable = ({
     rows,
     className,
     columns,
+} : {
+    rows: any,
+    className?:any,
+    columns:any
 }) => {
 
   return (
-    <div>
+    <Fragment>
         <DataGrid 
             className={className}
             rows={rows}
@@ -53,8 +56,8 @@ const TMTabs: FC<TmDataTableProps> = ({
                 ColumnSortedDescendingIcon: ArrowDropUpIcon
             }}
         />
-    </div>
+    </Fragment>
   );
 };
 
-export default TMTabs;
+export default TmDataTable;

@@ -28,7 +28,7 @@ export const Primary: Story = (args) => {
 
 
 Primary.args = {
-    page: 'client-dashboard-main',
+    
     rows: [
         {id: 'DTTX23244', projectName: 'London Vlog', orderType: 'Multiple, Mixed', orderDate: '21 Mar 23', dueDate: '28 Mar 23', status: 'Rejected'},
         {id: 'DTTX23244', projectName: 'London Vlog', orderType: 'Multiple, Mixed', orderDate: '21 Mar 23', dueDate: '28 Mar 23', status: 'Rejected'},

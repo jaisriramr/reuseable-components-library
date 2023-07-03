@@ -1,6 +1,6 @@
 {
   "name": "tm-reuseable-components",
-  "version": "0.2.6",
+  "version": "0.3.1",
   "description": "This is a reuseable components lib made for TextMercato",
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",

@@ -31,6 +31,7 @@ const Input: FC<InputProps> = ({
   onMouseOut,
   onMouseOver,
   onMouseEnter,
+  disabled
 }) => {
 
 {/* <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,6 +42,7 @@ const Input: FC<InputProps> = ({
   return (
     <Fragment>
       <TextField 
+      disabled={disabled}
         onMouseDown={onMouseDown}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}

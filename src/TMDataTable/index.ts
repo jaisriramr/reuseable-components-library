@@ -1,1 +1,3 @@
-export { default as TmDataTable } from './tmDataTable'
+import TmDataTable from "./tmDataTable";
+
+export default TmDataTable;

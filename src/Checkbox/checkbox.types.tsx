@@ -14,4 +14,5 @@ export interface CheckboxProps {
   role?: any;
   inputProps?: object;
   className?: string;
+  name?: any;
 }

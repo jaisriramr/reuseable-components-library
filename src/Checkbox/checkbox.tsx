@@ -15,12 +15,14 @@ const CheckBox: FC<CheckboxProps> = ({
   value,
   role,
   inputProps,
-  className
+  className,
+  name,
 }) => {
 
   return (
     <Fragment>
       <Checkbox 
+      name={name}
       className={className}
         checked={checked}
         checkedIcon={checkedIcon}
